@@ -1,0 +1,40 @@
+.container2 {
+  background-color: rgb(100 116 139);
+  border-radius: 30px;
+  width: 1000px;
+  height: 400px;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+span {
+  border-bottom: 1px solid red;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  margin: 20px auto;
+}
+.displayEffect {
+  font-size: 50px;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.showUseEffect,
+.NotUseEffect {
+  padding: 10px;
+  margin: 4px;
+}
+.note {
+  font-size: 20px;
+  color: yellow;
+  margin: 10px;
+}
+p {
+  display: inline;
+  font-size: 20px;
+  color: rgb(219, 209, 209);
+}

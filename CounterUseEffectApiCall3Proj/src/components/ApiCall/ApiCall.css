@@ -1,0 +1,13 @@
+.container3 {
+  background-color: rgb(100 116 139);
+  border-radius: 30px;
+  width: 1000px;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+ul li {
+  list-style: lower;
+}
