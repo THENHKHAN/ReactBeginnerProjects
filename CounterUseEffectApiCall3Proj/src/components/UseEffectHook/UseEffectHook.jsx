@@ -9,10 +9,11 @@ const UseEffectHook = () => {
   useEffect(() => {
     console.log("inside useEffect Hook");
   }, [showEffect]);
-  //  Here i have used a dependency show the callback function only render when showEffect variable will chnages.
-  //  we can also write multiple variable in the list.So callback will only run when mention vriable state will change
+  //  Here i have used a dependency so the callback function only render when showEffect variable or state will chnages.
+  //  we can also write multiple variable in the list.So callback will only run when mention variable state will change
   // And if nothing mention in the list thnen only 1st time render because of page load.
   // and if we ommit the 2nd arg then it will execute every time whenver anything chnage of this component.
+ // SO Basically in the 2nd argument we provide the dependency for rendering this useEffect
   /*
 Conclusion: Here we mention showEffect so callback only render when this state variable will change.
  */
