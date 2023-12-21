@@ -1,0 +1,37 @@
+li{
+    list-style: none;
+}
+.container {
+    width: 900px; /* Adjust the width as needed */
+    height: auto; /* Adjust the height as needed */
+    background-color: #202abb; /* Set the background color */
+    color: #fff; /* Set the text color */
+    text-align: center;
+    border-radius: 10px; /* Set border radius for rounded corners */
+  }
+.activity-addBtn{
+    /* background-color: red; */
+    display: flex;
+    gap: 1px;
+    justify-content: center;
+}
+input, button{
+background-color: rgb(101, 207, 101);
+margin-top: 10px;
+padding: 8px 80px 8px 4px;
+outline: none;
+border: none;
+border-radius: 5px;
+}
+input{
+    background-color: white;
+    color: black;
+    font-weight: 530;
+    font-size: 25px;
+}
+.addBtn{
+    font-size: 30px;
+    padding: 8px 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
