@@ -2,6 +2,7 @@ li{
     list-style: none;
 }
 .container {
+    margin-top: 20px;
     width: 900px; /* Adjust the width as needed */
     height: auto; /* Adjust the height as needed */
     background-color: #202abb; /* Set the background color */
@@ -14,10 +15,14 @@ li{
     display: flex;
     gap: 1px;
     justify-content: center;
+    padding: 10px;
+    margin: 10px 0;
 }
+
+
 input, button{
 background-color: rgb(101, 207, 101);
-margin-top: 10px;
+/* margin-top: 10px; */
 padding: 8px 80px 8px 4px;
 outline: none;
 border: none;
@@ -34,4 +39,44 @@ input{
     padding: 8px 30px;
     font-weight: bold;
     cursor: pointer;
+}
+.todosListInfo{
+    color: bisque;
+    font-size: 37px;
+    margin: 10px 0;
+}
+.dataContainer{
+    display: flex;
+    justify-content: center;
+}
+.todos{
+    background-color: aliceblue;
+    width: 400px;
+    /* margin: auto; */
+    color: black;
+    font-size: 25px;
+    border-radius: 2px;
+    margin-bottom: 1px;
+    margin-right: 2px;
+    border: 1px solid red;
+    padding: 5px 0;
+}
+.rmvEditBtn{
+    display: flex;
+}
+.rmvEditBtn button{
+    margin-top: 0;/* to overwrite the above button style*/
+}
+
+.rmvBtn{
+    background-color: red; 
+    text-align: center;
+    padding: 8px 17px;
+    font-size: 20px;
+    
+}
+.editBtn{
+    text-align: center;
+    padding: 8px 25px;
+    font-size: 20px;
 }

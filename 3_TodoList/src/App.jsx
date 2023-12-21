@@ -8,7 +8,7 @@ function App() {
 
       { /* inline css  */}
      {/* <h1 style={{color:"red"}}>Hello TODO </h1>  */}
-     <h1>Hello TODO </h1>
+     
      {/* here will call each components */}
       <Title />
       <TodoList />

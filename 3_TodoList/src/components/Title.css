@@ -1,5 +1,9 @@
 .heading{
-    color: black;
+    color: rgb(84, 35, 133);
+    margin: 20px 0;
     font-weight: bold;
     text-align: center;
+}
+span{
+    color: red;
 }
