@@ -1,3 +1,13 @@
+
+### Tech Stack :
+- `HTML`
+- `CSS`
+- `REACT`
+## Features:
+`1` User can `Add Todo`. <br/>
+`2` User can `Delete Todo`. <br/>
+`3` User can `Edit and Update Todo`. <br/>
+
 # Snipppets
 
 - ### HOME: <br/>
