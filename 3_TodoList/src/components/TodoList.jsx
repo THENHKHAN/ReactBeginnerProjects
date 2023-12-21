@@ -25,8 +25,6 @@ function addTaskHandler(){
         console.log("task-added")
         setInputData("") // this will empty the input box  
        
-        // for making add button to update button
-        
 
     } 
 
@@ -47,11 +45,19 @@ function editTask(ind){
       setInputData(todoItems[ind])
       console.log("edd: ", isEditing)
       console.log("ind: ", editIndex)
-      // targetTask = todoItems[ind]
-      // setInputData(targetTask)
-      // setTodoItems((todoItems)=>{
-      // console.log("eeeeeeeeeeeeddddddddddddddd")
-      // })
+}
+// updating edited task:
+function updateTaskHandler(){
+    // we have already got editIndex from editTask function so it will not null. And initially(without clicking on EDIT button it will null) it will be null
+    if (editIndex !== null && inputData.trim() !== "") {
+        const updatedTodoItems = [...todoItems] // by this we got all the element in the existing todoItems
+        updatedTodoItems[editIndex] = inputData;
+        setTodoItems(updatedTodoItems);
+        setIsEditing(false);
+        setEditIndex(null);
+        setInputData("");
+    }
+
 }
 
   return (
@@ -59,8 +65,10 @@ function editTask(ind){
     <div className="container">
         <div className="activity-addBtn">
             
-            <input type="text" name="todo" id="inpBox" placeholder='Add your task' onChange={inputHandler} value={inputData}/>
-            <button className='addBtn' onClick={addTaskHandler}>Add</button>
+              <input type="text" name="todo" id="inpBox" placeholder='Add your task' onChange={inputHandler} value={inputData}/>
+            {/* if edit button is not clicked   : isEditing initially set false  */}
+              {!isEditing && <button className='addBtn' onClick={addTaskHandler}>Add</button>}
+              {isEditing && <button className='addBtn' onClick={updateTaskHandler} style={{"color":"white"}}>Update</button>}
 
         </div>
 
@@ -71,13 +79,22 @@ function editTask(ind){
                         {
                             todoItems.map(
                                 (ele, ind) =>( // see below about map() fun
-                                    // imlicit return ies here
+                                    // implicit return applies here
                                     <>
                                     <div className="dataContainer">
                                             <li key={ind} className='todos'> {`task- ${ind+1} : `}  {ele}  </li>
                                             <div className="rmvEditBtn">
                                                     <button onClick={()=>{rmvTask(ind)}} className='rmvBtn'>Remove</button>
-                                                    <button onClick={()=>{editTask(ind)}} className='editBtn'>Edit</button>
+                                                    { // true && 34 == 34 ==> 34 means true && 34  will result as 34 
+                                                      isEditing && editIndex === ind ? (
+                                                                                          <button className='editBtn'>Editting...</button>
+                                                                                        )
+                                                                                     :
+                                                                (
+                                                                  <button onClick={()=>{editTask(ind)}} className='editBtn'>Edit</button>
+
+                                                                )
+                                                    }
                                             </div>
                                     </div>
                                     </>
