@@ -1,0 +1,6 @@
+
+--> How to use coonditional rendering
+--> how to dissapear success mesaage using setTimeOut() funciton 
+--> how to use get data from form in the form of js object
+--> How to use form TAG in REACT : with submit button
+--> How to handle when use submit form in FORM TAG.
