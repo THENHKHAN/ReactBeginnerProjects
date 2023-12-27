@@ -1,8 +1,13 @@
-# React + Vite
+Random Strong Password Generator with Filter 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Feature:
+- Default (contains alphabets)
+- Alphabets , Numbers
+- Alphabet , Numbers Special characters
+- Alphabet, Special characters
 
-Currently, two official plugins are available:
+## ScreenShots:
+[! img](./1_ss.jpg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+[! img](./2_ss.jpg)
